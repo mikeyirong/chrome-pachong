@@ -1,0 +1,58 @@
+<html lang="zh-CN">
+
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="bootstrap.min.js"></script>
+
+		<style>
+			   body {
+					  width: 400px;
+					  height:300px;
+					}
+		.box {
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6699FF', endColorstr=' #6699FF');  /*  IE */
+		background-image:linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
+		background-image:-o-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
+		background-image:-moz-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);
+	    /*背景颜色*/
+		background-image:-webkit-linear-gradient(bottom, #80FFFF 0%, #3399cc 100%);
+		background-image:-ms-linear-gradient(bottom, #6699FF 0%, #6699FF 100%);		
+		margin: 0 auto;
+	    position: relative;
+		width: 100%;
+		height: 100%;
+	    }
+		</style>
+    </head>
+	<body>
+	<script type="text/javascript" src="popup.js"></script>
+    <div class="box">
+	 <center style = "margin-top:0px"> <img src="timor.jpg" class="img-circle" style="width:300px;height:100px"/>                        
+	 </center>
+		<form class="form-horizontal" role="form">
+				<center><h2 class="form-signin-heading">ebay海外仓产品抓取</h2></center>
+			    <div class="form-group" style="margin-right:80px;margin-left:80px;margin-top:40px">
+				    <div class="col-sm-offset-2 col-sm-10">
+				        <button id="submit1" class="btn btn-lg btn-primary btn-block" data-loading-text="Loading..." type="button">fetchData</button>
+				    </div>
+			    </div>
+			    <center>
+				    <div style = "color:#6699FF" id="noticeMessageDiv" >
+				           <strong id="noticeMessage">Call me baby！！！</strong>
+				    </div>
+			    </center> 
+		</form>
+    </div>
+  </body>
+</html>

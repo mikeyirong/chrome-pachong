@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "ebay海外仓产品抓取",
+  "description": "This extension demonstrates a 'browser action' with kittens.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "superman1.jpg",
+    "default_popup": "popup.html"       
+  },
+  "background": { "scripts": ["lib/jquery.min.js","popup.js"] },
+  "permissions":[
+    "browsingData",
+    "tabs", 
+    "http://*/*", "https://*/*",
+    "cookies"
+  ],
+
+  "content_scripts":[{
+    "matches":["https://signin.ebay.com/ws/*"],
+    "js":["lib/jquery.min.js","shopName.js"]
+  }]
+}
